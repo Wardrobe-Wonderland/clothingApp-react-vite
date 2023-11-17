@@ -5,10 +5,10 @@ import MalePage from './Pages/MalePage';
 import FemalePage from './Pages/FemalePage';
 import ProductPage from './Pages/ProductPage';
 import './App.css'
-import ProductList from './ProductList';
-import ProductDetails from './ProductDetails';
-import AddProductForm from './AddProductForm';
-import UpdateProductForm from './UpdateProductForm';
+import ProductList from './components/ProductList';
+import ProductDetails from './components/ProductDetails';
+import AddProductForm from './components/AddProductForm';
+import UpdateProductForm from './components/UpdateProductForm';
 
 function App() {
   const [count, setCount] = useState(0)
