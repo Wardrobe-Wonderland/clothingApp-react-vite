@@ -10,7 +10,7 @@ function Homepage(props) {
 
   useEffect(function () {
     axios
-      .get(`${API_URL}/male`)
+      .get(`${API_URL}/all`)
       .then(function (response) {
         setProducts(response.data);
       })
@@ -18,23 +18,15 @@ function Homepage(props) {
         console.log("Error Fetching the Products", error);
       });
 
-    axios
-      .get(`${API_URL}/female`)
-      .then(function (response) {
-        setProducts(response.data);
-      })
-      .catch(function (error) {
-        console.log("Error Fetching the Products", error);
-      });
+
   }, []);
-  console.log(products);
+
   return (
     <>
       <div>
-        <p>This is Homepage</p>
+
         <ProductList products={products} />
-        <Link to={"/Men"}>
-          <li>All Men</li>
+        <Link to={"/all"}>
         </Link>
       </div>
     </>

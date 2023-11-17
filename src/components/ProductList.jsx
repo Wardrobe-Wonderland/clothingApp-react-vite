@@ -8,8 +8,10 @@ function ProductList(props) {
       {props.products.map((product)=>{
          return (
           <div>
-            <p>{product.name}</p>
-            <p>{product.size}</p>
+            <p>Name: {product.name} </p>
+            <p>Description: {product.description}</p>
+            <p>Size: {product.size}</p>
+            <p>Price: {product.price}</p>
             <img className="image" src={product.imageLink} />
 
           </div>
