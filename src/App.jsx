@@ -15,6 +15,10 @@ function App() {
       <h1>Wardrobe Wonderland</h1>
       </div>
        <Homepage />
+       <AddProductForm />
+       <ProductDetails />
+       <ProductList />
+       <UpdateProductForm />
     </>
   )
 }
