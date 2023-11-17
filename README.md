@@ -52,7 +52,9 @@ Adding optional request headers.
 [x] Initialize React App with Vite
 [] Ensure you have the react-router-dom
 
+# FUNCTIONALITY
 
+[] link homepage
 
 # STYLE AND CSS
 []

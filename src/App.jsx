@@ -1,34 +1,34 @@
-import { useState } from 'react';
-import Homepage from './Pages/HomePage';
-import AboutPage from './Pages/AboutPage';
-import MalePage from './Pages/MalePage';
-import FemalePage from './Pages/FemalePage';
-import ProductPage from './Pages/ProductPage';
-import './App.css'
-import ProductList from './components/ProductList';
-import ProductDetails from './components/ProductDetails';
-import AddProductForm from './components/AddProductForm';
-import UpdateProductForm from './components/UpdateProductForm';
+import { useState } from "react";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import MalePage from "./Pages/MalePage";
+import FemalePage from "./Pages/FemalePage";
+import ProductPage from "./Pages/ProductPage";
+import "./App.css";
+import ProductList from "./components/ProductList";
+import ProductDetails from "./components/ProductDetails";
+import AddProductForm from "./components/AddProductForm";
+import UpdateProductForm from "./components/UpdateProductForm";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <div>
-      <h1>Wardrobe Wonderland</h1>
+        <h1>Wardrobe Wonderland</h1>
       </div>
-       <Homepage />
-       <AboutPage />
-       <MalePage />
-       <FemalePage />
-       <ProductPage />
-       <AddProductForm />
-       <ProductDetails />
-       <ProductList />
-       <UpdateProductForm />
+      <Navbar />
+        <Routes>
+        <Route path="/" element={<HomePage />} />
+
+        </Routes>
+      <div></div>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
