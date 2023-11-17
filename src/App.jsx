@@ -5,6 +5,10 @@ import MalePage from './Pages/MalePage';
 import FemalePage from './Pages/FemalePage';
 import ProductPage from './Pages/ProductPage';
 import './App.css'
+import ProductList from './ProductList';
+import ProductDetails from './ProductDetails';
+import AddProductForm from './AddProductForm';
+import UpdateProductForm from './UpdateProductForm';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +23,10 @@ function App() {
        <MalePage />
        <FemalePage />
        <ProductPage />
+       <AddProductForm />
+       <ProductDetails />
+       <ProductList />
+       <UpdateProductForm />
     </>
   )
 }

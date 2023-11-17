@@ -1,8 +1,8 @@
 #  MVP PLANNING
 [x] App idea
 [x] create an organisation and repository on github
-[x] Create a backend API
-[] set the milestones
+[X] Create a backend API
+[X] set the milestones
 [] View List of Products
 [] View Product Details
 [] Add a New Product
@@ -26,11 +26,12 @@ Adding optional request headers.
 
 
 # components
-ProductList
-ProductDetails
-AddProductForm
-ProductDetails(Include a Delete button and implement the functionality)
-UpdateProductForm
+[X]ProductList
+[X]ProductDetails
+[X]AddProductForm
+[X]ProductDetails
+[] (Include a Delete button and implement the functionality)
+[X]UpdateProductForm
 
 
 
