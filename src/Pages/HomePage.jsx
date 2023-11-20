@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import ProductList from "../components/ProductList";
 
+
 const API_URL = "http://localhost:5005";
 
 function Homepage(props) {
@@ -26,6 +27,7 @@ function Homepage(props) {
       <div>
 
         <ProductList products={products} />
+    
         <Link to={"/all"}>
         </Link>
       </div>
