@@ -71,3 +71,8 @@ button:focus-visible {
   height: 250px;
   width: auto;
 }
+
+.create-form{
+  display: flex;
+  flex-direction: column;
+}

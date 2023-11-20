@@ -9,7 +9,7 @@ function AddProductForm() {
   const [description, setDescription] = useState("");
   const [size, setSize] = useState("");
   const [price, setPrice] = useState("");
-  const [gender, setGender] = useState("");
+  const [gender, setGender] = useState("male");
 
   const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const handleGender = (e) => setGender(e.target.value);
 const handleSubmit = async (e) => {
   try {
     e.preventDefault();
-
+console.log(gender);
     const createProduct = {
       name,
       description,
@@ -56,7 +56,8 @@ return (
       className="d-inline-flex flex-column justify-content-center align-items-center"
       style={{ maxWidth: "700px" }}
     >
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}
+       className="create-form">
         <label>Name</label>
         <input
           className="form-control"
@@ -96,22 +97,23 @@ return (
           onChange={handlePrice}
         />
 
-        <label>Gender
-          Option 1:
+        <label>Gender:
+          Male
           <input
+            name="gender"
             type="radio"
             value="male"
-            // checked={selectedOption === "male"}
-            // onChange={handleOptionChange}
+            checked
+            onChange={handleGender}
           />
         </label>
         <label>
-          Option 2:
+          Female
           <input
+            name="gender"
             type="radio"
             value="female"
-            // checked={selectedOption === "female"}
-            // onChange={handleOptionChange}
+            onChange={handleGender}
           />
         </label>
         <button className="btn btn-primary btn-round">Add Product</button>
@@ -130,41 +132,6 @@ export default AddProductForm;
 
 
 
-// function AddProductForm(props) {
-//   const [product, setProduct] = useState({
-//     name:"",
-//     description:"",
-//     size: "",
-//     price: "",
-//     gender: "",
-
-//   });
-
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     axios
-//     .post (`${API_URL}/all`, product)
-//     .then((response)=>{
-//       console.log("Product added", response.data)
-//     })
-//     .catch((error)=>{
-//       console.log("Error fetching the product", error);
-//     });
 
 
 
-//     // // clear the form
-//     // setTitle("");
-//     // setRating("");
-//   };
-// <div className="form">
-//       <h2>Add Product</h2>
-//       <form onSubmit={handleSubmit}>
-//       </form>
-//     </div>
-//   ;
-
-
-
-// }
