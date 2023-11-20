@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import axios from 'axios';
 
 
 function AddProductForm(props) {
-  const [name, setName] = useState("");
+  const [product, setProduct] = useState({
+    name:"",
+    description:"",
+  });
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newProduct = {
-      Name: name,
-    }
-  return (
-    <div>
-      <h2>Add Product Form</h2>
-    </div>
-  );
-}
+    
+
+
+    // clear the form
+    setTitle("");
+    setRating("");
+  };
 }
 
 export default AddProductForm;

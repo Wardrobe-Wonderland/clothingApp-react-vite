@@ -26,6 +26,7 @@ function App() {
         <Route path="/male" element={<MalePage />} />
         <Route path="/female" element={<FemalePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/create" element={<AddProductForm />} />
 
 
         </Routes>
