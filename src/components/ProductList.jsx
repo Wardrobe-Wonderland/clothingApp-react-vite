@@ -3,11 +3,11 @@ import React from 'react';
 function ProductList(props) {
 
   return (
-    <div>
+    <div >
       <h2>Product List</h2>
       {props.products.map((product)=>{
          return (
-          <div>
+          <div className='singleItem' key={product.id} >
             <p>Name: {product.name} </p>
             <p>Description: {product.description}</p>
             <p>Size: {product.size}</p>

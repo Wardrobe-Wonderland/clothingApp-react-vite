@@ -23,6 +23,10 @@ function App() {
       <Navbar />
         <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/male" element={<MalePage />} />
+        <Route path="/female" element={<FemalePage />} />
+        <Route path="/about" element={<AboutPage />} />
+
 
         </Routes>
       <div></div>

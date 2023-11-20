@@ -3,8 +3,8 @@
 [x] create an organisation and repository on github
 [X] Create a backend API
 [X] set the milestones
-[] View List of Products
-[] View Product Details
+[x] View List of Products
+[x] View Product Details
 [] Add a New Product
 [] Update Existing Product
 [] Delete a Product
@@ -42,6 +42,12 @@ Adding optional request headers.
 [x]Female page (collection)
 [x]Product page
 
+# DISPLAY COMPONENTS
+[x] display all products on homepage
+[x] display male products on malepage
+[x]display female products on female page
+
+
 # BACKEND API
 [x] create a list of 10 Male clothing items
 [x] create a list of 10 Female clothing items
@@ -50,11 +56,12 @@ Adding optional request headers.
 
 # REACT APP
 [x] Initialize React App with Vite
-[] Ensure you have the react-router-dom
+[x] Ensure you have the react-router-dom
 
 # FUNCTIONALITY
 
-[] link homepage
+[x] link all pages
+
 
 # STYLE AND CSS
 []
