@@ -35,7 +35,7 @@ console.log("product deleted");
             <button onClick={() => handleDelete(product.id)}>Delete</button>
 
             <Link to={`/update/${product.id}`}>
-              <button>Update</button>
+              <button>Edit</button>
             </Link>
           </div>
         );

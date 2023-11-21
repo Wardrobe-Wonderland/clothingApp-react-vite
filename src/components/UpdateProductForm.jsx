@@ -10,6 +10,7 @@ function UpdateProductForm() {
   const [size, setSize] = useState("");
   const [price, setPrice] = useState("");
   const [gender, setGender] = useState("male");
+  const [imageLink, setImageLink] = useState(null);
 
   const navigate = useNavigate();
   const { id } = useParams();
@@ -26,6 +27,8 @@ function UpdateProductForm() {
         setSize(product.size);
         setPrice(product.price);
         setGender(product.gender);
+        setImageLink(null);
+        
       } catch (error) {
         console.error("Error fetching product details", error);
       }
@@ -39,6 +42,7 @@ function UpdateProductForm() {
   const handleSize = (e) => setSize(e.target.value);
   const handlePrice = (e) => setPrice(e.target.value);
   const handleGender = (e) => setGender(e.target.value);
+  const handleImageLink = (e) => setImageLink(e.target.value);
 
   const handleSubmit = async (e) => {
     try {
@@ -50,6 +54,7 @@ function UpdateProductForm() {
         size,
         price,
         gender,
+        imageLink
       };
 
       await axios.put(`${API_URL}/all/${id}`, updatedProduct);
@@ -67,7 +72,43 @@ function UpdateProductForm() {
         style={{ maxWidth: "700px" }}
       >
       
-        <form onSubmit={handleSubmit} className="update-form">
+      <form onSubmit={handleSubmit}>
+          <input
+            className="form-control"
+            type="text"
+            name="imageLink"
+            placeholder="Image"
+            value={imageLink}
+            onChange={handleImageLink}
+          />
+          <input
+            className="form-control"
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={name}
+            onChange={handleName}
+          />
+          <label className="form-label">Description</label>
+          <textarea
+            className="form-control"
+            type="text"
+            name="description"
+            placeholder="Description"
+            
+            value={description}
+            onChange={handleDescription}
+          ></textarea>
+
+          <label>Size</label>
+          <input
+            className="form-control"
+            type="text"
+            name="size"
+            placeholder="Size"
+            value={size}
+            onChange={handleSize}
+          />
 
           <label>Price</label>
           <input
@@ -78,7 +119,28 @@ function UpdateProductForm() {
             onChange={handlePrice}
           />
 
-          <button className="btn btn-primary btn-round">Update Product</button>
+          <label>
+            Gender: Male
+            <input
+              name="gender"
+              type="radio"
+              value="male"
+              checked
+              onChange={handleGender}
+            />
+          </label>
+          <label>
+            Female
+            <input
+              name="gender"
+              type="radio"
+              value="female"
+              onChange={handleGender}
+            />
+          </label>
+          <button className="btn btn-primary btn-round" type="submit">
+            Edit Product
+          </button>
         </form>
       </div>
     </>
