@@ -4,21 +4,22 @@ import axios from "axios";
 import ProductList from "../components/ProductList";
 
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://wardrobewonderland.adaptable.app/";
 
 function Homepage(props) {
   const [products, setProducts] = useState([]);
+  const  getProducts = () => {
+    axios
+    .get(`${API_URL}/all`)
+    .then(function (response) {
+      setProducts(response.data);
+    })
+    .catch(function (error) {
+      console.log("Error Fetching the Products", error);
+    });} 
 
   useEffect(function () {
-    axios
-      .get(`${API_URL}/all`)
-      .then(function (response) {
-        setProducts(response.data);
-      })
-      .catch(function (error) {
-        console.log("Error Fetching the Products", error);
-      });
-
+    getProducts()
 
   }, []);
 
@@ -26,7 +27,7 @@ function Homepage(props) {
     <>
       <div>
 
-        <ProductList products={products} />
+        <ProductList products={products}  getProducts={getProducts}/>
     
         <Link to={"/all"}>
         </Link>

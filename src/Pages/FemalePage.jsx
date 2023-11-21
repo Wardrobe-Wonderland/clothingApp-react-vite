@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProductList from "../components/ProductList";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://wardrobewonderland.adaptable.app/";
 
 function FemalePage(props) {
   const [products, setProducts] = useState([]);
