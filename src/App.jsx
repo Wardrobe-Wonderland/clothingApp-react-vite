@@ -27,6 +27,9 @@ function App() {
         <Route path="/female" element={<FemalePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/create" element={<AddProductForm />} />
+        <Route path="/update/:id" element={<UpdateProductForm />} />
+        <Route path="/delete/:id" element={<ProductList />} />
+      
 
 
         </Routes>
