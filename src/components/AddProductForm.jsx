@@ -24,7 +24,7 @@ const handleGender = (e) => setGender(e.target.value);
 const handleSubmit = async (e) => {
   try {
     e.preventDefault();
-console.log(gender);
+
     const createProduct = {
       name,
       description,
@@ -51,7 +51,6 @@ console.log(gender);
   
 return (
   <>
-    {/* <Navbar /> */}
     <div
       className="d-inline-flex flex-column justify-content-center align-items-center"
       style={{ maxWidth: "700px" }}
