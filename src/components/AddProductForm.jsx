@@ -50,10 +50,10 @@ function AddProductForm() {
 
   return (
     <>
-      <div
+    <div
         className="d-inline-flex flex-column justify-content-center align-items-center"
-        style={{ maxWidth: "700px" }}
-      >
+        style={{ maxWidth: "700px" }}>
+  
         <form onSubmit={handleSubmit}>
           <input
             className="form-control"
