@@ -9,6 +9,7 @@ function AddProductForm() {
   const [description, setDescription] = useState("");
   const [size, setSize] = useState("");
   const [price, setPrice] = useState("");
+  const [image, setImage] = useState(null);
   const [gender, setGender] = useState("male");
 
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ const handleDescription = (e) => setDescription(e.target.value);
 const handleSize = (e) => setSize(e.target.value);
 const handlePrice = (e) => setPrice(e.target.value);
 const handleGender = (e) => setGender(e.target.value);
+const handleImage = (e) => setImage(e.target.value);
 
 
 const handleSubmit = async (e) => {
@@ -31,6 +33,7 @@ const handleSubmit = async (e) => {
       size,
       price,
       gender,
+      image,
     };
 
     await axios.post(`${API_URL}/all`, createProduct);
@@ -41,6 +44,7 @@ const handleSubmit = async (e) => {
     setSize("");
     setPrice("");
     setGender("");
+    setImage(null);
 
     navigate("/");
   } catch (err) {
@@ -55,9 +59,7 @@ return (
       className="d-inline-flex flex-column justify-content-center align-items-center"
       style={{ maxWidth: "700px" }}
     >
-      <form onSubmit={handleSubmit}
-       className="create-form">
-        <label>Name</label>
+      <form> 
         <input
           className="form-control"
           type="text"
