@@ -16,13 +16,8 @@ function App() {
 
   return (
     <>
-      <div
-      className= "container">
-        <h1>Wardrobe Wonderland</h1>
-  
-      </div>
       <Navbar />
-        <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/male" element={<MalePage />} />
         <Route path="/female" element={<FemalePage />} />
@@ -31,12 +26,7 @@ function App() {
         <Route path="/update/:id" element={<UpdateProductForm />} />
         <Route path="/delete/:id" element={<ProductList />} />
         <Route path="/all/:productId" element={<ProductDetails />} />
-      
-
-
-        </Routes>
-      
-
+      </Routes>
     </>
   );
 }
