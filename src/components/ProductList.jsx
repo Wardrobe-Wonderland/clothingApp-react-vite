@@ -27,10 +27,10 @@ function ProductList(props) {
         {props.products.map((product) => (
           <div className="col-md-4" key={product.id}>
             <div className="card mb-4">
-              <img
+              <Link to={`/all/${product.id}`}><img
                 src={product.imageLink}
                 className="card-img-top"
-              />
+              /></Link>
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.description}</p>

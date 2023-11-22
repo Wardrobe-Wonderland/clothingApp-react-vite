@@ -3,7 +3,6 @@ import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import MalePage from "./Pages/MalePage";
 import FemalePage from "./Pages/FemalePage";
-import ProductPage from "./Pages/ProductPage";
 import "./App.css";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
@@ -31,6 +30,7 @@ function App() {
         <Route path="/create" element={<AddProductForm />} />
         <Route path="/update/:id" element={<UpdateProductForm />} />
         <Route path="/delete/:id" element={<ProductList />} />
+        <Route path="/all/:productId" element={<ProductDetails />} />
       
 
 

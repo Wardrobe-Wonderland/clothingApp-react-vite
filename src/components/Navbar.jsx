@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-
+import logo from "../assets/images/logo.png";
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-        <img src="./images/logo.png" alt="logo" height="75vw" />
+        <img src={logo} alt="logo" height="75vw" />
         </Link>
         <button
           className="navbar-toggler"
