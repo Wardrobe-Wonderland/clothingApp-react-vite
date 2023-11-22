@@ -49,6 +49,9 @@ function ProductDetails() {
             width="auto"
           />
           <h3>Name: {requestedProduct.name}</h3>
+          <p>Size: {requestedProduct.size}</p>
+          <p>Price: {requestedProduct.price}</p>
+
           <p>Description: {requestedProduct.description}</p>
 
           <button
