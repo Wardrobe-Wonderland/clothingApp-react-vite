@@ -22,23 +22,23 @@ function ProductList(props) {
   };
 
   return (
-    <div className="container text-center">
-      
+    <div className="container">
       <div className="row">
         {props.products.map((product) => (
           <div className="col" key={product.id}>
-            <div className="singleItem">
-            <img className="image" src={product.imageLink} alt={product.name} />
-              <p>Name: {product.name} </p>
-              <p>Description: {product.description}</p>
+            <div className="card card-shadow h-100">
+
+              <img className="image" src={product.imageLink} alt={product.name} />
+              <h5>{product.name}</h5>
+              <p>{product.description}</p>
               <p>Size: {product.size}</p>
               <p>Price: {product.price}</p>
-              
-              <button className="btn btn-danger" onClick={() => handleDelete(product.id)}>
+
+              <button className="btn btn-secondary" onClick={() => handleDelete(product.id)}>
                 Delete
               </button>
               <Link to={`/update/${product.id}`}>
-                <button className="btn btn-primary">Edit</button>
+                <button className="btn btn-muted">Edit</button>
               </Link>
             </div>
           </div>
