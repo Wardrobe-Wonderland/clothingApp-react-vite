@@ -25,21 +25,26 @@ function ProductList(props) {
     <div className="container">
       <div className="row">
         {props.products.map((product) => (
-          <div className="col" key={product.id}>
-            <div className="card card-shadow h-100">
-
-              <img className="image" src={product.imageLink} alt={product.name} />
-              <h5>{product.name}</h5>
-              <p>{product.description}</p>
-              <p>Size: {product.size}</p>
-              <p>Price: {product.price}</p>
-
-              <button className="btn btn-secondary" onClick={() => handleDelete(product.id)}>
-                Delete
-              </button>
-              <Link to={`/update/${product.id}`}>
-                <button className="btn btn-muted">Edit</button>
-              </Link>
+          <div className="col-md-4" key={product.id}>
+            <div className="card mb-4">
+              <img
+                src={product.imageLink}
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">{product.name}</h5>
+                <p className="card-text">{product.description}</p>
+                <p className="card-text">Size: {product.size}</p>
+                <p className="card-text">Price: {product.price}</p>
+                <button
+                  className="btn btn-danger" onClick={() => handleDelete(product.id)}
+                >
+                  Delete
+                </button>
+                <Link to={`/update/${product.id}`}>
+                  <button className="btn btn-primary ml-2">Edit</button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}
