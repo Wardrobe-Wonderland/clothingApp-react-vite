@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import ProductList from "../components/ProductList";
-import slide1 from "../assets/images/slide1"
-import slide2 from "../assets/images/slide2"
-import slide3 from "../assets/images/slide3"
-import slide4 from "../assets/images/slide4"
+import slide1 from "../assets/images/slide1.jpeg"
+import slide2 from "../assets/images/slide2.jpeg"
+import slide3 from "../assets/images/slide3.jpeg"
+import slide4 from "../assets/images/slide4.jpeg"
 
 const API_URL = "https://wardrobewonderland.adaptable.app/";
 
