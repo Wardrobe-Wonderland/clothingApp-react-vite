@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import ProductList from "../components/ProductList";
+import slide1 from "../assets/images/slide1"
+import slide2 from "../assets/images/slide2"
+import slide3 from "../assets/images/slide3"
+import slide4 from "../assets/images/slide4"
 
 const API_URL = "https://wardrobewonderland.adaptable.app/";
 
@@ -37,28 +41,28 @@ function Homepage(props) {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="src/assets/images/2.jpeg"
+                src={slide1}
                 className="d-block w-100"
                 alt="clothes"
               />
             </div>
             <div className="carousel-item">
               <img
-                src="src/assets/images/hanger.jpeg"
+                src={slide2}
                 className="d-block w-100"
                 alt="hanger image"
               />
             </div>
             <div className="carousel-item">
               <img
-                src="src/assets/images/pexels-photo-3755706.jpeg"
+                src={slide3}
                 className="d-block w-100"
                 alt="hanger image"
               />
             </div>
             <div className="carousel-item">
               <img
-                src="src/assets/images/pexels-photo-54200.jpeg"
+                src={slide4}
                 className="d-block w-100"
                 alt="jeans"
               />
