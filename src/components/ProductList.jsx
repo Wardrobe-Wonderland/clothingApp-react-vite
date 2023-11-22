@@ -23,7 +23,7 @@ function ProductList(props) {
 
   return (
     <div className="container text-center">
-      <h2>Product List</h2>
+      
       <div className="row">
         {props.products.map((product) => (
           <div className="col" key={product.id}>
