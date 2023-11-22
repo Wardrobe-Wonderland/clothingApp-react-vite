@@ -65,19 +65,19 @@ Adding optional request headers.
 [] functionality 
 
 # STYLE AND CSS
-[]Homepage -> Grid ->Huseyin
+[x]Homepage -> Grid ->Huseyin
 in Homepage -> Carousel
-[]AddProductForm -> Horizontal Form -> Huseyin
-[]Navbar -> Working with flex utilities -> Huseyin
-[]UpdateForm -> Horizontal Form -> Huseyin
-[]Male page (collection) -> Grid ->Nisha
+[x]AddProductForm -> Horizontal Form -> Huseyin
+[x]Navbar -> Working with flex utilities -> Huseyin
+[x]UpdateForm -> Horizontal Form -> Huseyin
+[x]Male page (collection) -> Grid ->Nisha
 in Homepage -> Carousel
-[]Female page (collection) -> Grid ->Nisha
+[x]Female page (collection) -> Grid ->Nisha
 in Homepage -> Carousel
-[]About page -> Nisha
+[x]About page -> Nisha
 
 
-[]Product page ->
+
 
 # BONUS FUNCTIONALITY
 Footer Page (IG account etc)
