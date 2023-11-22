@@ -20,7 +20,7 @@ function App() {
       <div
       className= "container">
         <h1>Wardrobe Wonderland</h1>
-        <button className = "btn btn-primary"> my button</button>
+  
       </div>
       <Navbar />
         <Routes>

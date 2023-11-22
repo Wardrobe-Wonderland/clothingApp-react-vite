@@ -1,21 +1,68 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
-    return(
-        <>
-        <div>
-          <nav className="Navbar" style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <p><Link to={"/"}>Home</Link></p>
-            <p><Link to={"/male"}>Men</Link></p>
-            <p><Link to={"/female"}>Women</Link></p>
-            <p><Link to={"/about"}>About</Link></p>
-            <button><Link to={"/create"}>Create</Link></button>
-          </nav>
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+        <img src="./images/logo.png" alt="logo" height="75vw" />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/male">
+                Men
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/female">
+                Women
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <button className="btn btn-outline-success">
+                <Link to="/create" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  Create
+                </Link>
+              </button>
+            </li>
+          </ul>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+             Search
+            </button>
+          </form>
         </div>
-      </>
-      
-
-    )
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
