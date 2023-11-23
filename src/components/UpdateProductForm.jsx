@@ -21,14 +21,19 @@ function UpdateProductForm() {
         const response = await axios.get(`${API_URL}/all/${id}`);
         const product = response.data;
 
-        
+
         setName(product.name);
         setDescription(product.description);
         setSize(product.size);
         setPrice(product.price);
-        setGender(product.gender);
-        setImageLink(null);
+
         
+        setGender(product.gender);
+
+
+
+        
+        setImageLink(product.imageLink || "URL_TO_DEFAULT_IMAGE");
       } catch (error) {
         console.error("Error fetching product details", error);
       }
@@ -71,8 +76,8 @@ function UpdateProductForm() {
         className="d-inline-flex flex-column justify-content-center align-items-center"
         style={{ maxWidth: "700px" }}
       >
-      
-      <form onSubmit={handleSubmit}>
+
+        <form onSubmit={handleSubmit}>
           <input
             className="form-control"
             type="text"
@@ -95,7 +100,7 @@ function UpdateProductForm() {
             type="text"
             name="description"
             placeholder="Description"
-            
+
             value={description}
             onChange={handleDescription}
           ></textarea>
@@ -125,7 +130,7 @@ function UpdateProductForm() {
               name="gender"
               type="radio"
               value="male"
-              checked
+              checked={gender === "male"}
               onChange={handleGender}
             />
           </label>
@@ -135,6 +140,7 @@ function UpdateProductForm() {
               name="gender"
               type="radio"
               value="female"
+              checked={gender === "female"}
               onChange={handleGender}
             />
           </label>
@@ -148,3 +154,4 @@ function UpdateProductForm() {
 }
 
 export default UpdateProductForm;
+
