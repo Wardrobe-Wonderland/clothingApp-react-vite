@@ -48,7 +48,7 @@ function Navbar() {
               </button>
             </li>
           </ul>
-          <form className="d-flex" role="search">
+          {/* <form className="d-flex" role="search">
             <input
               className="form-control me-2"
               type="search"
@@ -58,7 +58,7 @@ function Navbar() {
             <button className="btn btn-outline-success" type="submit">
              Search
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </nav>
