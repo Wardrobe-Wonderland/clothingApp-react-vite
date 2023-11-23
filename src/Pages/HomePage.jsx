@@ -93,6 +93,7 @@ function Homepage(props) {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+        <p></p>
         <ProductList products={products} getProducts={getProducts} />
 
         <Link to={"/all"}></Link>
