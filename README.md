@@ -1,86 +1,25 @@
-#  MVP PLANNING
-[x] App idea
-[x] create an organisation and repository on github
-[X] Create a backend API
-[X] set the milestones
-[x] View List of Products
-[x] View Product Details
-[x] Add a New Product
-[] Update Existing Product
-[x] Delete a Product
+# Wardrobe Wonderland E-commerce Platform
 
-# Create a backend API
-Create and use a mock server using the Postman API
-[x] Step 1: Set up a collection for mocking.
-[x] Step 2: Retrieve the collection ID.
-[x] Step 3: Create a mock server with the Postman API.
-[x] Step 4: Get the mock server URL.
-[x] Step 5: Send a request to the mock server.
-[] Deploy the JSON file/ backend 
-Adding optional request headers.
+## Description
+This project is a Pre-owned E-commerce platform that allows users to view a list of products.
+- See details of a specific product
+- Add a new product 
+- Update existing product information
+- Delete a product.
 
+ ## Instructions to Run Locally
 
+- 1.  Install Dependencies
+   Make sure you have Node.js and npm installed on your machine. Then, navigate to the project directory in your terminal and run the following command to install dependencies:
 
-# CREATING A REPO IN GIT HUB
-[x] create a repo for project 2
+        "npm install"
 
+- 2. Environment Variables
+    If your application requires environment variables, create a .env file in the root of your project and add the necessary variables.
 
+- 3. Run the Application
+    Once the dependencies are installed and environment variables are set, run the application with the following command: 
+    "npm run dev"
 
-# components
-[X]ProductList
-[X]ProductDetails
-[X]AddProductForm
-[X]ProductDetails
-[x] (Include a Delete button and implement the functionality)
-[X]UpdateProductForm
-
-
-
-# PAGES
-[x]Homepage
-[x]Aboutpage
-[x]Male page (collection)
-[x]Female page (collection)
-[x]Product page
-
-# DISPLAY COMPONENTS
-[x] display all products on homepage
-[x] display male products on malepage
-[x]display female products on female page
-
-
-# BACKEND API
-[x] create a list of 10 Male clothing items
-[x] create a list of 10 Female clothing items
-[x] organise above list into a structure for JSON.
-[x] create an API in Postman
-
-# REACT APP
-[x] Initialize React App with Vite
-[x] Ensure you have the react-router-dom
-
-# FUNCTIONALITY
-
-[x] link all pages
-[] functionality 
-
-# STYLE AND CSS
-[x]Homepage -> Grid ->Huseyin
-in Homepage -> Carousel
-[x]AddProductForm -> Horizontal Form -> Huseyin
-[x]Navbar -> Working with flex utilities -> Huseyin
-[x]UpdateForm -> Horizontal Form -> Huseyin
-[x]Male page (collection) -> Grid ->Nisha
-in Homepage -> Carousel
-[x]Female page (collection) -> Grid ->Nisha
-in Homepage -> Carousel
-[x]About page -> Nisha
-
-
-
-
-# BONUS FUNCTIONALITY
-Footer Page (IG account etc)
-Search 
-Shopping Card
-Filter
+## Demo
+    Check out the live demo of the project on https://wordrobe-wonderland.netlify.app/ 
