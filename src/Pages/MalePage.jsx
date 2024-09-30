@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProductList from "../components/ProductList";
 
-const API_URL = "https://wardrobewonderland.adaptable.app/";
+const API_URL = "https://wardrobe-wonderland-backend.onrender.com/";
 
 function MalePage (props){
     const [products, setProducts] = useState([]);

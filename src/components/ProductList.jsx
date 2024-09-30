@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 
-const API_URL = "https://wardrobewonderland.adaptable.app/";
+const API_URL = "https://wardrobe-wonderland-backend.onrender.com/";
 
 function ProductList(props) {
   const [products, setProducts] = useState("");

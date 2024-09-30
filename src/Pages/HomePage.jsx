@@ -7,7 +7,7 @@ import slide2 from "../assets/images/slide2.jpeg"
 import slide3 from "../assets/images/slide3.jpeg"
 import slide4 from "../assets/images/slide4.jpeg"
 
-const API_URL = "https://wardrobewonderland.adaptable.app/";
+const API_URL = "https://wardrobe-wonderland-backend.onrender.com/";
 
 function Homepage(props) {
   const [products, setProducts] = useState([]);
