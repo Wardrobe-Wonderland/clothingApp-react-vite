@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://wardrobe-wonderland-backend.onrender.com/";
+const API_URL = "https://wardrobe-wonderland-backend.onrender.com";
 
 function ProductDetails() {
   const [requestedProduct, setRequestedProduct] = useState([]);

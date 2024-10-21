@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useNavigate, useParams } from "react-router-dom";
 
-const API_URL = "https://wardrobe-wonderland-backend.onrender.com/";
+const API_URL = "https://wardrobe-wonderland-backend.onrender.com";
 
 function UpdateProductForm() {
   const [name, setName] = useState("");
